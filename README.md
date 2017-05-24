@@ -26,11 +26,11 @@ if($prettyResponse){
 
 ```
 
-In the model you have to implement \Pyaesone17\LaravelPrettyHandler\Pretty trait and set up using setUp method. \s
-PrettyDefaultView will be default view of the App\User not found exception. \s
-PrettyRules will accept the array list with url and view. \s
-In the following example, if the exception occurs in admin section errors.backend page will show.\s 
-If request does not match any url value, it will show default page of the pretty hanlder 
+  In the model you have to implement \Pyaesone17\LaravelPrettyHandler\Pretty trait and set up using setUp method.
+  PrettyDefaultView will be default view of the App\User not found exception.
+  PrettyRules will accept the array list with url and view.
+  In the following example, if the exception occurs in admin section errors.backend page will show.
+  If request does not match any url value, it will show default page of the pretty hanlder 
 
 ``` php
 
