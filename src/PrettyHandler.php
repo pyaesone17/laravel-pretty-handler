@@ -100,7 +100,7 @@ class PrettyHandler
     {
         $usedTraits = class_uses($model);
 
-        return array_key_exists('App\Modules\Error\Pretty', $usedTraits);
+        return array_key_exists('Pyaesone17\LaravelPrettyHandler\Pretty', $usedTraits);
     }
 
     /**
