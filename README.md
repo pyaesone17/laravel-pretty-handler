@@ -2,11 +2,11 @@
 
 The package will allow you to define the error view based on model and based on the request.
 
-Frontend view of Shop Model Not Found Exception
+**Frontend view of Shop Model Not Found Exception**
 
 ![Frontend Example](https://raw.githubusercontent.com/pyaesone17/laravel-pretty-handler/master/examples/1st.png)
 
-Backend view of Shop Model Not Found Exception
+**Backend view of Shop Model Not Found Exception**
 
 ![Backend Example](https://raw.githubusercontent.com/pyaesone17/laravel-pretty-handler/master/examples/2nd.png)
 
