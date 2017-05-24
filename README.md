@@ -17,17 +17,24 @@ Via Composer
 ``` bash
 $ composer require pyaesone17/laravel-pretty-handler
 ```
-
 ## Usage
+Firstly register the serviceprovider in config/app.php like this
 
-In the render method of App\Exceptions\Handler.
+``` php
+   [ ....
+       Pyaesone17\LaravelPrettyHandler\PrettyServiceProvider::class       
+   ],
+
+```
+
+Resolve **\Pyaesone17\LaravelPrettyHandler\PrettyHandler** like this in the render method of App\Exceptions\Handler.
 
 ``` php
 
 $prettyResponse = ( resolve(\Pyaesone17\LaravelPrettyHandler\PrettyHandler::class)) ($e);
 
 if($prettyResponse){
-	return $prettyResponse;
+    return $prettyResponse;
 }
 
 ```
@@ -60,6 +67,10 @@ class User extends Model
 }
 
 ```
+## Note
+Do not use  **\Pyaesone17\LaravelPrettyHandler\PrettyHandler::class** directly in Handler because it recieve constructor value from the Service Container.
+
+You have to resolve the class fromn the container.
 
 ## Change log
 
