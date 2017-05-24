@@ -1,7 +1,5 @@
 # Laravel Pretty Handler
 
-[![Software License][ico-license]](LICENSE.md)
-
 The package will allow you to define the error view based on model and based on the request.
 
 Frontend view of Shop Model Not Found Exception
@@ -34,11 +32,15 @@ if($prettyResponse){
 
 ```
 
-  In the model you have to implement \Pyaesone17\LaravelPrettyHandler\Pretty trait and set up using setUp method.
-  PrettyDefaultView will be default view of the App\User not found exception.
-  PrettyRules will accept the array list with url and view.
-  In the following example, if the exception occurs in admin section errors.backend page will show.
-  If request does not match any url value, it will show default page of the pretty hanlder 
+In the model you have to implement **\Pyaesone17\LaravelPrettyHandler\Pretty** trait and set up using setUp method.
+
+**prettyDefaultView** will be default view of the App\User not found exception.
+
+**prettyRules** will accept the array list with url and view.
+
+In the following example, if the exception occurs in admin section errors.backend page will show.
+
+If request does not match any url value, it will show default page of the pretty hanlder 
 
 ``` php
 
