@@ -47,7 +47,7 @@ In the model you have to implement **\Pyaesone17\LaravelPrettyHandler\Pretty** t
 
 In the following example, if the exception occurs in admin section errors.backend page will show.
 
-If request does not match any url value, it will show default page of the pretty hanlder 
+If request does not match any url value, it will show default page of the Model that is defined in prettyDefaultView.
 
 ``` php
 
